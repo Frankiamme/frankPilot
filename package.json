@@ -1,0 +1,14 @@
+{
+  "name": "tmobile",
+  "version": "1.0.0",
+  "description": "This is a pilot project for Frank Ojwang",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frank Willis Ojwang",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
