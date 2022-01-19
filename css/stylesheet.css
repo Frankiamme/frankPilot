@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'teleneobold';
+    src: url('fonts/tele_neo_bold-webfont.woff2') format('woff2'),
+         url('fonts/tele_neo_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'teleneoextrabold';
+    src: url('fonts/tele_neo_extrabold-webfont.woff2') format('woff2'),
+         url('fonts/tele_neo_extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'teleneomedium';
+    src: url('fonts/tele_neo_medium-webfont.woff2') format('woff2'),
+         url('fonts/tele_neo_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'teleneo_officebold';
+    src: url('fonts/tele_neo_office_bold-webfont.woff2') format('woff2'),
+         url('fonts/tele_neo_office_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'teleneo_officeextrabold';
+    src: url('fonts/tele_neo_office_extrabold-webfont.woff2') format('woff2'),
+         url('fonts/tele_neo_office_extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'teleneo_officemedium';
+    src: url('fonts/tele_neo_office_medium-webfont.woff2') format('woff2'),
+         url('fonts/tele_neo_office_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'teleneo_officethin';
+    src: url('fonts/tele_neo_office_thin-webfont.woff2') format('woff2'),
+         url('fonts/tele_neo_office_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'teleneo_officeregular';
+    src: url('fonts/tele_neo_office-webfont.woff2') format('woff2'),
+         url('fonts/tele_neo_office-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'teleneothin';
+    src: url('fonts/tele_neo_thin-webfont.woff2') format('woff2'),
+         url('fonts/tele_neo_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'teleneoregular';
+    src: url('fonts/tele_neo-webfont.woff2') format('woff2'),
+         url('fonts/tele_neo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
