@@ -1,7 +1,24 @@
 $color-grey: #E5E5E5;
 
 .dashboard{
-    padding: 30px;
+    grid-row: 2/3;
+    grid-column: 2/3;
     font-size: 3.6rem;
     background-color: $color-grey;
+
+    display: grid;
+    grid-template-columns: 293px 1fr 293px;
+    grid-auto-rows: auto;
+}
+
+.snel{
+    grid-column: 2 / 3;
+}
+
+.openstaade{
+    grid-column: 2 / 3;
+}
+
+.statistics{
+    grid-column: 2 / 3;
 }

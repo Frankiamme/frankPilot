@@ -6,7 +6,9 @@
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
 
 .container {
   display: grid;
@@ -15,17 +17,26 @@ html {
 
 .dashboard {
   grid-row: 2/3;
-  grid-column: 2/3; }
-
-.dashboard {
-  padding: 30px;
+  grid-column: 2/3;
   font-size: 3.6rem;
-  background-color: #E5E5E5; }
+  background-color: #E5E5E5;
+  display: grid;
+  grid-template-columns: 293px 1fr 293px;
+  grid-auto-rows: auto; }
+
+.snel {
+  grid-column: 2 / 3; }
+
+.openstaade {
+  grid-column: 2 / 3; }
+
+.statistics {
+  grid-column: 2 / 3; }
 
 .header {
   grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: 158px 1170px 282px;
+  grid-template-columns: 190px 1fr 282px;
   color: black;
   font-size: 3.6rem;
   background-color: #ffffff; }
@@ -45,7 +56,8 @@ html {
   .header-title {
     grid-column: 1 / 2;
     padding: 37px 32px;
-    font-family: teleneobold; }
+    font-family: teleneobold;
+    list-style: 40px; }
 
 .openstaade {
   background-color: coral; }
@@ -63,6 +75,9 @@ html {
     grid-row: 1 / 2;
     align-self: start;
     justify-self: start; }
+    .sidebar-logo-icon {
+      width: 70px;
+      height: 34px; }
 
 .navigation__list {
   display: grid;
@@ -81,7 +96,10 @@ html {
   .navigation__list-bedrijfsfuncties {
     grid-row: 4/5; }
   .navigation__list-divider {
-    grid-row: 5/6; }
+    grid-row: 5/6;
+    width: 262px;
+    height: 0;
+    border: 0.5px solid #A4A4A4; }
   .navigation__list-help {
     grid-row: 6/7; }
 

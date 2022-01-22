@@ -2,7 +2,7 @@
     grid-column: 2 / 3;
 
     display: grid;
-    grid-template-columns: 158px 1170px 282px;
+    grid-template-columns: 190px 1fr 282px;
 
     color: black;
     font-size: 3.6rem;
@@ -36,5 +36,6 @@
         grid-column: 1 / 2;
         padding: 37px 32px;
         font-family: teleneobold;
+        list-style: 40px;
     }
 }
