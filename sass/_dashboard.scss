@@ -13,6 +13,47 @@ $color-grey: #E5E5E5;
 
 .snel{
     grid-column: 2 / 3;
+    
+    display: grid;
+    grid-template-rows: max-content 48px;
+    grid-template-columns: repeat(3, 330.67px);
+    grid-auto-rows: max-content;
+    gap: 16px;
+
+    &-title{
+        grid-column: 1 / 4;
+        padding-top: 48px;
+        padding-bottom: 20px;
+        line-height: 24px;
+        font-size: 22.5px;
+        color: #262626;
+    }
+
+    &__mijn{
+
+        &-icon{
+            width: 18px;
+            height: 18px;
+        }
+
+        &-button{
+            background-color:#E20074;
+            width: 330.67px;
+            height: 48px;
+            color: white;
+            font-size: 18px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        &-buttonplaceholder{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            line-height: 28px;
+            font-size: 18px;
+        }
+    }
+
 }
 
 .openstaade{
