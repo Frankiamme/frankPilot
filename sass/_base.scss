@@ -1,3 +1,4 @@
+*,
 *::before,
 *::after{
     margin: 0;
@@ -13,12 +14,12 @@ html{
 }
 
 body{
-    //font-family: 'Teleneomedium', 'Times New Roman', Times, serif;
+    font-family: teleneobold;
 }
 
 .container{
     display: grid;
-    
-    grid-template-rows: 118px 962px;
+    grid-template-rows: 114px 966px;
     grid-template-columns: 310px 1610px;
+    //gap: 0.5px;
 }
