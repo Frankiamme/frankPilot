@@ -1,3 +1,4 @@
+*,
 *::before,
 *::after {
   margin: 0;
@@ -15,14 +16,13 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 118px 962px;
+  grid-template-rows: 114px 966px;
   grid-template-columns: 310px 1610px; }
 
 .dashboard {
   grid-row: 2/3;
   grid-column: 2/3;
-  font-size: 3.6rem;
-  background-color: #E5E5E5;
+  background-color: #F6F6F6;
   display: grid;
   grid-template-columns: 293px 1fr 293px;
   grid-template-rows: repeat(3, max-content); }
@@ -39,26 +39,33 @@ body {
   .snel-title {
     grid-column: 1 / 4;
     padding-top: 48px;
-    padding-bottom: 20px;
+    padding-bottom: 4px;
     line-height: 24px;
     font-size: 22.5px;
     color: #262626; }
-  .snel__mijn-icon {
-    width: 18px;
-    height: 18px; }
   .snel__mijn-button {
     background-color: #E20074;
     width: 330.67px;
     height: 48px;
     color: white;
+    font-family: teleneobold;
     font-size: 18px;
     border-radius: 4px;
-    border: none; }
-  .snel__mijn-buttonplaceholder {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 28px;
-    font-size: 18px; }
+    border: none;
+    display: grid;
+    grid-template-columns: 18px max-content;
+    grid-template-rows: 28px;
+    column-gap: 8px;
+    align-content: center;
+    justify-content: center; }
+    .snel__mijn-button-icon {
+      grid-column: 1 / 2;
+      align-self: center; }
+    .snel__mijn-button-placeholder {
+      grid-column: 2 / 3;
+      line-height: 28px;
+      font-size: 18px;
+      align-self: center; }
 
 .openstaade {
   grid-column: 2 / 3;
@@ -88,7 +95,18 @@ body {
     .openstaade__item-notice-1-head {
       grid-row: 1 / 2;
       grid-column: 2 / 3;
-      padding-top: 24px; }
+      padding-top: 24px;
+      display: grid;
+      grid-template-columns: 28px 232px;
+      column-gap: 8px; }
+      .openstaade__item-notice-1-head-icon {
+        grid-column: 1 / 2;
+        align-self: start;
+        justify-self: start; }
+      .openstaade__item-notice-1-head-content {
+        grid-column: 2 / 3;
+        line-height: 28px;
+        align-self: start; }
     .openstaade__item-notice-1-body {
       grid-row: 2 / 3;
       grid-column: 2 / 3;
@@ -104,6 +122,23 @@ body {
     grid-template-rows: 80px 28px 52px;
     grid-template-columns: 24px 1fr 24px;
     row-gap: 8px; }
+    .openstaade__item-notice-2-head {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+      padding-top: 24px;
+      display: grid;
+      grid-template-columns: 28px 232px;
+      grid-template-rows: repeat(2, 28px);
+      column-gap: 8px; }
+      .openstaade__item-notice-2-head-icon {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        align-self: center; }
+      .openstaade__item-notice-2-head-content {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        line-height: 28px;
+        align-self: start; }
 
 .statistics {
   grid-column: 2 / 3;
@@ -152,29 +187,54 @@ body {
 
 .header {
   grid-column: 2 / 3;
+  box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.3);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
   display: grid;
-  grid-template-columns: 190px 1fr 282px;
-  color: black;
-  font-size: 3.6rem;
+  grid-template-columns: 158px 1fr 252px;
+  grid-template-rows: 40px;
+  padding: 37px 32px;
   background-color: #ffffff; }
-  .header-links {
-    grid-column: 3 / -1;
-    font-size: 18px;
-    justify-self: end;
-    align-self: center; }
-    .header-links-search {
-      padding-right: 25px; }
-    .header-links-account {
-      padding-right: 20px; }
-    .header-links-logout {
-      padding-right: 31.99px;
-      padding-top: 48px;
-      padding-bottom: 48px; }
   .header-title {
     grid-column: 1 / 2;
-    padding: 37px 32px;
     font-family: teleneobold;
-    list-style: 40px; }
+    line-height: 40px;
+    color: black;
+    font-size: 36px; }
+  .header-links {
+    grid-column: 3 / 4;
+    font-size: 18px;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 24px 108px 24px;
+    grid-template-rows: 28px;
+    align-items: center;
+    column-gap: 48px; }
+    .header-links-search {
+      grid-column: 1 / 2; }
+    .header-links-account {
+      grid-column: 2 / 3;
+      align-items: center;
+      display: grid;
+      grid-template-columns: 24px 76px;
+      grid-template-rows: 28px;
+      column-gap: 8px; }
+      .header-links-account-icon {
+        grid-column: 1 / 2; }
+      .header-links-account-items {
+        align-items: center;
+        grid-column: 2 / 2;
+        display: grid;
+        grid-template-columns: 60px 12px;
+        grid-template-rows: 28px;
+        column-gap: 4px; }
+        .header-links-account-items-1 {
+          grid-column: 1 / 2;
+          line-height: 28px;
+          font-family: teleneo_officeregular; }
+        .header-links-account-items-2 {
+          grid-column: 2 / 3; }
+    .header-links-logout {
+      grid-column: 3 / 4; }
 
 .sidebar {
   grid-row: 1 / 3;
@@ -182,40 +242,76 @@ body {
   display: grid;
   grid-template-rows: 114px 1fr;
   color: #000;
-  font-size: 3.6rem;
-  padding: 30px;
+  box-shadow: 0.5px 0px 0px rgba(0, 0, 0, 0.3);
+  border-right: 0.5px solid rgba(0, 0, 0, 0.3);
   background-color: #ffffff; }
   .sidebar-logo {
     grid-row: 1 / 2;
     align-self: start;
-    justify-self: start; }
+    justify-self: start;
+    padding-left: 24px;
+    padding-top: 40px; }
     .sidebar-logo-icon {
       width: 70px;
       height: 34px; }
-
-.navigation__list {
-  display: grid;
-  grid-template-rows: repeat(6, 56px) 1fr;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-family: teleneobold;
-  font-size: 16px; }
-  .navigation__list-dashboard {
-    grid-row: 1 / 2; }
-  .navigation__list-medewerkers {
-    grid-row: 2/3; }
-  .navigation__list-telefoonnummers {
-    grid-row: 3/4; }
-  .navigation__list-bedrijfsfuncties {
-    grid-row: 4/5; }
-  .navigation__list-divider {
-    grid-row: 5/6;
-    width: 262px;
-    height: 0;
-    border: 0.5px solid #A4A4A4; }
-  .navigation__list-help {
-    grid-row: 6/7; }
+  .sidebar-navigation__list {
+    grid-row: 2 / 3;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-rows: repeat(4, 56px) 32px 56px 1fr;
+    grid-template-columns: 309.5px;
+    font-family: teleneo_officeregular;
+    font-size: 16px;
+    line-height: 24px; }
+    .sidebar-navigation__list-link {
+      text-decoration: none;
+      color: #262626;
+      display: grid;
+      grid-template-columns: 48px max-content;
+      padding-left: 24px; }
+    .sidebar-navigation__list-dashboard {
+      grid-row: 1 / 2;
+      padding: 16px 0; }
+      .sidebar-navigation__list-dashboard:hover, .sidebar-navigation__list-dashboard:active {
+        background-color: #f6f6f6;
+        font-weight: bold; }
+    .sidebar-navigation__list-medewerkers {
+      grid-row: 2/3;
+      padding: 16px 0; }
+      .sidebar-navigation__list-medewerkers:hover, .sidebar-navigation__list-medewerkers:active {
+        background-color: #f6f6f6;
+        font-weight: bold; }
+    .sidebar-navigation__list-telefoonnummers {
+      grid-row: 3/4;
+      padding: 16px 0; }
+      .sidebar-navigation__list-telefoonnummers:hover, .sidebar-navigation__list-telefoonnummers:active {
+        background-color: #f6f6f6;
+        font-weight: bold; }
+    .sidebar-navigation__list-bedrijfsfuncties {
+      grid-row: 4/5;
+      padding: 16px 0; }
+      .sidebar-navigation__list-bedrijfsfuncties:hover, .sidebar-navigation__list-bedrijfsfuncties:active {
+        background-color: #f6f6f6;
+        font-weight: bold; }
+    .sidebar-navigation__list-divider {
+      grid-row: 5/6;
+      align-self: center;
+      width: 262px;
+      height: 0;
+      margin: 0 24px;
+      border-bottom: 0.5px solid #A4A4A4; }
+    .sidebar-navigation__list-help {
+      grid-row: 6/7;
+      padding: 16px 0; }
+      .sidebar-navigation__list-help:hover, .sidebar-navigation__list-help:active {
+        background-color: #f6f6f6;
+        font-weight: bold; }
 
 .iconspacing {
-  padding-right: 24px; }
+  width: 24px;
+  height: 24px; }
+
+.menuitem {
+  align-self: center; }

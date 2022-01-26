@@ -17,31 +17,39 @@
             <div class="sidebar-logo">
                 <img class="sidebar-logo-icon" src="images/logo.svg" alt="">
             </div>
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="naviagtion__list-dashboard">
+            <ul class="sidebar-navigation__list">
+                <li class="sidebar-navigation__list-dashboard">
+                    <a class="sidebar-navigation__list-link" href="#">
                         <img class="iconspacing" src="images/home.svg" alt="">
-                        <a class="navigation__list-link" href="#">Dashboard</a>
-                    </li>
-                    <li class="naviagtion__list-medewerkers">
+                        <span class="menuitem">Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-navigation__list-medewerkers">
+                    <a class="sidebar-navigation__list-link" href="#">
                         <img class="iconspacing" src="images/forum.svg" alt="">
-                        <a class="navigation__list-link" href="#">Medewerkers</a>
-                    </li>
-                    <li class="naviagtion__list-telefoonnummers">
+                        <span class="menuitem">Medewerkers</span>
+                    </a>
+                </li>
+                <li class="sidebar-navigation__list-telefoonnummers">
+                    <a class="sidebar-navigation__list-link" href="#">
                         <img class="iconspacing" src="images/phone.svg" alt="">
-                        <a class="navigation__list-link" href="#">Telefoonnummers</a>
-                    </li>
-                    <li class="naviagtion-__list-bedrijfsfuncties">
+                        <span class="menuitem">Telefoonnummers</span>
+                    </a>
+                </li>
+                <li class="sidebar-navigation__list-bedrijfsfuncties">
+                    <a class="sidebar-navigation__list-link" href="#">
                         <img class="iconspacing" src="images/store.svg" alt="">
-                        <a class="navigation__list-link" href="#">Bedrijfsfuncties</a>
-                    </li>
-                    <span class="navigation__list-divider"></span>
-                    <li class="naviagtion__list-help">
+                        <span class="menuitem">Bedrijfsfuncties</span>
+                    </a>
+                </li>
+                <span class="sidebar-navigation__list-divider"></span>
+                <li class="sidebar-navigation__list-help">
+                    <a class="sidebar-navigation__list-link" href="#">
                         <img class="iconspacing" src="images/statusinfo.svg" alt="">
-                        <a class="navigation__list-link" href="#">Help</a>
-                    </li>
-                </ul>
-            </nav>
+                        <span class="menuitem">Help</span>
+                    </a>
+                </li>
+            </ul>
         </div>
 
         <div class="header">
@@ -50,17 +58,15 @@
             </div>
 
             <div class="header-links">
-                <span class="header-links-search">
-                    <img src="images/search.svg" alt="">
-                </span>
+                <img class="header-links-search" src="images/search.svg" alt="">
                 <span class="header-links-account">
-                    <img src="images/personicon.svg" alt="">
-                    Account
-                    <img src="images/arrowdown.svg" alt="">
+                    <img class="header-links-account-icon" src="images/personicon.svg" alt="">
+                    <div class="header-links-account-items">
+                        <span class="header-links-account-items-1">Account</span>
+                        <img class="header-links-account-items-2" src="images/arrowdown.svg" alt="">
+                    </div>
                 </span>
-                <span class="header-links-logout">
-                    <img src="images/logout.svg" alt="">
-                </span>
+                <img class="header-links-logout" src="images/logout.svg" alt="">
             </div>
         </div>
 
@@ -72,31 +78,29 @@
 
                 <div class="snel__mijn">
                     <button class="snel__mijn-button">
-                        <span>
-                            <img class="snel__mijn-icon" src="images/refresh.svg" alt="">
-                        </span>
-                        <span class="snel__mijn-buttonplaceholder">MIJN BELGROEPEN</span>
+                        <img class="snel__mijn-button-icon" src="images/refresh.svg" alt="">
+                        <span class="snel__mijn-button-placeholder">MIJN BELGROEPEN</span>
                     </button>
                 </div>
 
                 <div class="snel__bekijk">
                     <button class="snel__mijn-button">
-                        <img class="snel__mijn-icon" src="images/forum2.svg" alt="">
-                        <span class="snel__mijn-buttonplaceholder">BEKIJK</span>
+                        <img class="snel__mijn-button-icon" src="images/forum2.svg" alt="">
+                        <span class="snel__mijn-button-placeholder">BEKIJK MEDEWERKERS</span>
                     </button>
                 </div>
 
                 <div class="snel__telefoonnumbers">
                     <button class="snel__mijn-button">
-                        <img class="snel__mijn-icon" src="images/phone2.svg" alt="">
-                        <span class="snel__mijn-buttonplaceholder">MIJN TELEFOONNUMMERS</span>
+                        <img class="snel__mijn-button-icon" src="images/phone2.svg" alt="">
+                        <span class="snel__mijn-button-placeholder">MIJN TELEFOONNUMMERS</span>
                     </button>
                 </div>
 
                 <div class="snel__bekijkrecente">
                     <button class="snel__mijn-button">
-                        <img class="snel__mijn-icon" src="images/clock.svg" alt="">
-                        <span class="snel__mijn-buttonplaceholder">BEKIJK RECENTE GESPREKKEN</span>
+                        <img class="snel__mijn-button-icon" src="images/clock.svg" alt="">
+                        <span class="snel__mijn-button-placeholder">BEKIJK RECENTE GESPREKKEN</span>
                     </button>
                 </div>
 
@@ -108,9 +112,12 @@
                 </div>
 
                 <div class="openstaade__item-notice openstaade__item-notice-1">
-                    <span class="openstaade__item-notice-1-head">
-                        Medewerkers activeren
-                    </span>
+                    <div class="openstaade__item-notice-1-head">
+                        <img class="openstaade__item-notice-1-head-icon" src="images/statuswarning.svg" alt="">
+                        <span class="openstaade__item-notice-1-head-content">
+                            Medewerkers activeren
+                        </span>
+                    </div>
                     <span class="openstaade__item-notice-1-body">
                         Je Moet nog 2 Medewerkers
                         activeren
@@ -121,9 +128,12 @@
                 </div>
 
                 <div class="openstaade__item-notice openstaade__item-notice-2">
-                    <span class="openstaade__item-notice-1-head">
-                        openstaade nummerbehound verzoeken
-                    </span>
+                    <div class="openstaade__item-notice-2-head">
+                        <img class="openstaade__item-notice-2-head-icon" src="images/statuswarning.svg" alt="">
+                        <span class="openstaade__item-notice-2-head-content">
+                            Openstaade nummerbehound verzoeken
+                        </span>
+                    </div>
                     <span class="openstaade__item-notice-1-body">
                         Er zijn 5 openstaade verzoeken
                     </span>
