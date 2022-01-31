@@ -1,3 +1,4 @@
+*,
 *::before,
 *::after{
     margin: 0;
@@ -18,7 +19,40 @@ body{
 
 .container{
     display: grid;
-    
-    grid-template-rows: 118px 962px;
-    grid-template-columns: 310px 1610px;
+    grid-template-columns: minmax(200px, 310px) minmax(24px, 1fr) min-content minmax(24px, 1fr);
+    grid-template-rows: 114px min-content min-content min-content;
+
+    @media only screen and (max-width: 1000px){
+    // grid-template-columns: minmax(24px, 1fr) min-content minmax(24px, 1fr);
+    grid-template-columns: minmax(24px, 1fr) minmax(min-content, 900px) minmax(24px, 1fr);
+    grid-template-rows: repeat(4, min-content);
+  }
+
 }
+
+.bleed1{
+    grid-column: 2 / 3;
+    grid-row: 2 / span 3;
+    background-color: #F6F6F6;
+    @media only screen and (max-width: 1000px){
+        grid-column: 1 / 2;
+        grid-row: 2 / span 3;
+      }
+}
+.bleed2{
+    grid-column: 4 / 5;
+    grid-row: 2 / span 3;
+    background-color: #F6F6F6;
+    @media only screen and (max-width: 1000px){
+        grid-column: 3 / 4;
+        grid-row: 2 / span 3;
+      }
+}
+
+//Breakpoints
+//1201 extra large screens
+//1366 - 1200 desktops, large screens
+//1001 - 1365 small screens laptops
+//720 - 1000 landscape mode
+//481 - 719 ipads, tablets
+//320 - 480 phones

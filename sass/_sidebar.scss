@@ -1,64 +1,138 @@
-.sidebar{
-    grid-row: 1 / 3;
-    grid-column: 1 / 2;
+.sidebar {
+  grid-row: 1 / span 4;
+  display: grid;
+  grid-template-rows: 114px 1fr;
+  color: #000;
+  box-shadow: 0.5px 0px 0px rgba(0, 0, 0, 0.3);
+  border-right: 0.5px solid rgba(0, 0, 0, 0.3);
+  background-color: $color-white;
 
+  // @media only screen and (max-width: 1920px){
+  //   display: grid;
+  //   grid-template-rows: minmax(90px, 114px) 1fr;
+  // }
 
-    display: grid;
-    grid-template-rows: 114px 1fr;
-    color: #000;
-    font-size: 3.6rem;
-    padding: 30px;
-    background-color: #ffffff; 
+  // @media only screen and (max-width: 1280px){
+  //   grid-row: 1 / 2;
+  //   grid-column: 1 / -1;
+  // }
 
-    &-logo{
-        grid-row: 1 / 2;
-        align-self: start;
-        justify-self: start;
+  @media only screen and (max-width: 1000px){
+    display: none;
+    // grid-column: 2 / 3;
+    // grid-row: 1 / 2;
+    // display: grid;
+    // grid-template-columns: minmax(24px, 1fr) min-content minmax(24px, 1fr);
+  }
 
-        &-icon{
-            width: 70px;
-            height: 34px;
-        }
+  .iconspacing {
+    width: 24px;
+    height: 24px;
+  }
+
+  .menuitem {
+    align-self: center;
+  }
+
+  &-logo {
+    grid-row: 1 / 2;
+    align-self: start;
+    justify-self: start;
+    padding-left: 24px;
+    padding-top: 40px;
+
+    .logo-icon {
+      width: 70px;
+      height: 34px;
     }
-}
+  }
 
-.navigation__list{
-    display: grid;
-    grid-template-rows: repeat(6, 56px) 1fr;
+  &-navigation__list {
+    grid-row: 2 / 3;
     list-style: none;
-    margin: 0;
     padding: 0;
-    font-family: teleneobold;
+    margin: 0;
+
+    display: grid;
+    grid-template-rows: repeat(4, 56px) 32px 56px 1fr;
+    grid-template-columns: minmax(200px, 309.5px);
+    font-family: teleneo_officeregular;
     font-size: 16px;
+    line-height: 24px;
 
-    &-dashboard{
-        grid-row: 1 / 2;
+    &-link {
+      text-decoration: none;
+      color: $color-dark;
+
+      display: grid;
+      grid-template-columns: 48px max-content;
+      padding-left: 24px;
     }
 
-    &-medewerkers{
-        grid-row: 2/3;
+    &-dashboard {
+      grid-row: 1 / 2;
+      padding: 16px 0;
+      &:hover,
+      &:active {
+        background-color: $color-grey-light;
+        font-weight: bold;
+      }
     }
 
-    &-telefoonnummers{
-        grid-row: 3/4;
+    &-medewerkers {
+      grid-row: 2/3;
+      padding: 16px 0;
+      &:hover,
+      &:active {
+        background-color: #f6f6f6;
+        font-weight: bold;
+      }
     }
 
-    &-bedrijfsfuncties{
-        grid-row: 4/5;
+    &-telefoonnummers {
+      grid-row: 3/4;
+      padding: 16px 0;
+      &:hover,
+      &:active {
+        background-color: #f6f6f6;
+        font-weight: bold;
+      }
     }
 
-    &-divider{
-        grid-row: 5/6;
-        width: 262px;
-        height: 0;
-        border: 0.5px solid #A4A4A4;
+    &-bedrijfsfuncties {
+      grid-row: 4/5;
+      padding: 16px 0;
+      &:hover,
+      &:active {
+        background-color: #f6f6f6;
+        font-weight: bold;
+      }
     }
 
-    &-help{
-        grid-row: 6/7;
+    &-divider {
+      grid-row: 5/6;
+      align-self: center;
+      width: 262px;
+      height: 0;
+      margin: 0 24px;
+      border-bottom: 0.5px solid #a4a4a4;
+      
+      @media only screen and (max-width: 1366px){
+        width: 200px
+      }
+      // @media only screen and (max-width: 1310px){
+      //   width: 150px
+      // }
     }
-}
 
-.iconspacing{
-    padding-right: 24px;
+    &-help {
+      grid-row: 6/7;
+      padding: 16px 0;
+      &:hover,
+      &:active {
+        background-color: #f6f6f6;
+        font-weight: bold;
+      }
+    }
+  }
 }
