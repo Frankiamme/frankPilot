@@ -36,7 +36,7 @@ body{
     background-color: #F6F6F6;
     @media only screen and (max-width: 1000px){
         grid-column: 1 / 2;
-        grid-row: 2 / span 3;
+        grid-row: 2 / span 4;
       }
 }
 .bleed2{
@@ -45,7 +45,7 @@ body{
     background-color: #F6F6F6;
     @media only screen and (max-width: 1000px){
         grid-column: 3 / 4;
-        grid-row: 2 / span 3;
+        grid-row: 2 / span 4;
       }
 }
 
