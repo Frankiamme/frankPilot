@@ -409,7 +409,7 @@ body {
   grid-column: 3 / 4;
   display: grid;
   grid-template-rows: max-content max-content;
-  grid-template-columns: repeat(auto-fit, minmax(min-content, 312px));
+  grid-template-columns: repeat(2, 312px);
   padding-bottom: 64px;
   background-color: #F6F6F6; }
   @media only screen and (max-width: 1000px) {
@@ -453,8 +453,8 @@ body {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     display: grid;
-    grid-template-rows: 52px 56px 52px;
-    grid-template-columns: 24px 1fr 24px;
+    grid-template-rows: 50px 56px 50px;
+    grid-template-columns: 22px 264px 22px;
     row-gap: 8px; }
     @media only screen and (max-width: 1000px) {
       .openstaade__item-notice-1 {
@@ -462,7 +462,7 @@ body {
     .openstaade__item-notice-1-head {
       grid-row: 1 / 2;
       grid-column: 2 / 3;
-      padding-top: 24px;
+      padding-top: 22px;
       display: grid;
       grid-template-columns: 28px 232px;
       column-gap: 8px; }
@@ -487,8 +487,8 @@ body {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 80px 28px 52px;
-    grid-template-columns: 24px 1fr 24px;
+    grid-template-rows: 78px 28px 50px;
+    grid-template-columns: 22px 264px 22px;
     row-gap: 8px; }
     @media only screen and (max-width: 1000px) {
       .openstaade__item-notice-2 {
@@ -496,7 +496,7 @@ body {
     .openstaade__item-notice-2-head {
       grid-row: 1 / 2;
       grid-column: 2 / 3;
-      padding-top: 24px;
+      padding-top: 22px;
       display: grid;
       grid-template-columns: 28px 232px;
       grid-template-rows: repeat(2, 28px);
