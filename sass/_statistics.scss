@@ -12,11 +12,12 @@
     @media only screen and (max-width: 1000px){
         grid-column: 2 / 3;
         grid-row: 4 / 5;
-        padding-bottom: 64px;
+        padding-bottom: 50px;
       }
 
       @media only screen and (max-width: 720px){
         // display: none;
+        padding-bottom: 32px;
       }
 
     &-title{
@@ -34,6 +35,7 @@
             // grid-template-rows: max-content 128px;
             // grid-template-columns: repeat(auto-fit, minmax(235px, 330.67px));
             grid-template-columns: repeat(3, 148px);
+            grid-template-rows: 132px;
             grid-auto-flow: column;
             overflow-x: scroll;
             scroll-snap-type: x proximity;
@@ -107,4 +109,12 @@
         height: 40px;
         transform: translate(50%, 50%);
     }
+    .no-scrollbar {
+        scrollbar-width: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
 }

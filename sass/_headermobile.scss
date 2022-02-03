@@ -1,0 +1,187 @@
+.header-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){
+    .header-mobile{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 56px minmax(100px, 1fr) 24px 10px 48px;
+        grid-template-rows: 114px;
+        // align-items: center;
+        column-gap: 24px;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+        // padding-right: 24px;
+        padding-left: 24px;
+
+        &-logo{
+            align-self: center;
+            grid-column: 1 / 2;
+            height: 27px;
+            width: 56px;
+        }
+
+        &-gap{
+            grid-column: 2 / 3;
+            // justify-self: center;
+        }
+        &-search{
+            align-self: center;
+            grid-column: 3 / 4;
+            height: 30px;
+            width: 30px;
+            padding-right: 24px;
+        }
+        &-divider{
+            grid-column: 4 / 5;
+            justify-self: center;
+            // align-self: center;
+            height: 114px;
+            width: 0px;
+            border-left: 0.5px solid #a4a4a4;
+            // padding-right: 24px;
+        }
+        &-menu{
+            align-self: start;
+            grid-column: 5 / 6;
+            width: 24px;
+            height: 24px;
+        }
+
+        .nav-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            // width: 79.5%;
+            width: 310px;
+            height: 100%;
+            z-index: -1;
+            background: #fff;
+            opacity: 0;
+            transition: all 0.2s ease;
+
+            display: grid;
+            grid-template-rows: 114px 1fr;
+        }
+
+        // .nav-wrapper ul {
+        //     position: absolute;
+        //     width: 79.5%;
+        // }
+
+        // .nav-wrapper ul li{
+        //     display: block;
+        //     float: none;
+        //     width: 100%;
+        //     text-align: left;
+        // }
+
+        // .nav-wrapper ul li a {
+        //     padding: 10px 24px;
+        //     opacity: 0;
+        //     color: #000;
+        //     font-size: 14px;
+        //     letter-spacing: 1.2px;
+        // }
+
+        .nav-btn {
+            position: absolute;
+            top: 10px;
+            display: block;
+            width: 24px;
+            height: 31px;
+            cursor: pointer;
+            z-index: 9999;
+            border-radius: 50%;
+            padding-top: 28px;
+        }
+
+        .nav-btn i {
+            display: block;
+            width: 20px;
+            height: 1.23px;
+            background: #000;
+            border-radius: 2px;
+        }
+
+        .menu{
+            font-size: 8px;
+            line-height: 12px;
+            font-family: teleneomedium;
+        }
+
+        .nav-btn i:nth-child(1) {
+            margin-top: 5.01px;
+        }
+
+        .nav-btn i:nth-child(2) {
+            margin-top: 5.01px;
+            opacity: 1;
+        }
+
+        .nav-btn i:nth-child(3) {
+            margin-top: 5.01px;
+        }
+        .hidden{
+            display: none;
+        }
+    
+        #nav:checked ~ .nav-wrapper{
+            z-index: 9999;
+            opacity: 1;
+        }
+    
+        #nav:checked ~ .nav-wrapper ul li a {
+            opacity: 1;
+        }
+
+        &-logosmall{
+            display: none;
+            height: 27px;
+            width: 56px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    .header-mobile{
+        grid-template-rows: 75px;
+
+        .nav-btn {
+            position: absolute;
+            top: 21.99px;
+            display: block;
+            width: 24px;
+            height: 31px;
+            cursor: pointer;
+            z-index: 9999;
+            border-radius: 50%;
+            padding-top: 0;
+        }
+
+        .nav-btn i {
+            display: block;
+            width: 20px;
+            height: 1.23px;
+            background: #000;
+            border-radius: 2px;
+        }
+
+        .nav-btn i:nth-child(1) {
+            margin-top: 5.01px;
+        }
+
+        .nav-btn i:nth-child(2) {
+            margin-top: 5.01px;
+            opacity: 1;
+        }
+
+        .nav-btn i:nth-child(3) {
+            margin-top: 5.01px;
+        }
+    }
+}

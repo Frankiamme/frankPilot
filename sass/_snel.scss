@@ -14,6 +14,10 @@
         grid-row: 5 / 6;
         padding-bottom: 250px;
       }
+    @media only screen and (max-width: 720px){
+        // display: none;
+        padding-bottom: 24px;
+    }
 
 
     &-title{

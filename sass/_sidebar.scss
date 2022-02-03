@@ -7,22 +7,11 @@
   border-right: 0.5px solid rgba(0, 0, 0, 0.3);
   background-color: $color-white;
 
-  // @media only screen and (max-width: 1920px){
-  //   display: grid;
-  //   grid-template-rows: minmax(90px, 114px) 1fr;
-  // }
-
-  // @media only screen and (max-width: 1280px){
-  //   grid-row: 1 / 2;
-  //   grid-column: 1 / -1;
-  // }
 
   @media only screen and (max-width: 1000px){
     display: none;
-    // grid-column: 2 / 3;
-    // grid-row: 1 / 2;
-    // display: grid;
-    // grid-template-columns: minmax(24px, 1fr) min-content minmax(24px, 1fr);
+    border-right: none;
+    box-shadow: none;
   }
 
   .iconspacing {
@@ -59,6 +48,10 @@
     font-family: teleneo_officeregular;
     font-size: 16px;
     line-height: 24px;
+
+    @media only screen and (max-width: 1000px){
+      grid-template-rows: repeat(4, 56px) 32px repeat(3, 56px);
+    }
 
     &-link {
       text-decoration: none;
@@ -134,5 +127,43 @@
         font-weight: bold;
       }
     }
+
+    @media only screen and (max-width: 1000px){
+      &-divider{
+        width: 262px;
+      }
+
+      &-account {
+        grid-row: 6/7;
+        padding: 16px 0;
+        &:hover,
+        &:active {
+          background-color: #f6f6f6;
+          font-weight: bold;
+        }
+      }
+
+      &-help {
+        grid-row: 7/8;
+        padding: 16px 0;
+        &:hover,
+        &:active {
+          background-color: #f6f6f6;
+          font-weight: bold;
+        }
+      }
+  
+      &-logout {
+        grid-row: 8/9;
+        padding: 16px 0;
+        &:hover,
+        &:active {
+          background-color: #f6f6f6;
+          font-weight: bold;
+        }
+      }
+
+    }
+
   }
 }

@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="menu.js"></script>
+
 </head>
 
 <body>
@@ -64,21 +66,64 @@
 
             <div class="header-mobile-menu">
                 <input type="checkbox" id="nav" class="hidden">
+                <!-- <input type="checkbox" id="menuId" class="hidden"> -->
                 <label for="nav" class="nav-btn">
                     <i></i>
                     <i></i>
                     <i></i>
                     <span class="menu">MENU</span>
                 </label>
-                <div class="nav-wrapper">
-                    <ul>
-                        <li><a href="#" class="">Dashboard</a></li>
-                        <li><a href="#" class="">Medewerkers</a></li>
-                        <li><a href="#" class="">Telefoonnummers</a></li>
-                        <li><a href="#" class="">Bedrijfsfuncties</a></li>
-                        <li><a href="#" class="">Account</a></li>
-                        <li><a href="#" class="">Help</a></li>
-                        <li><a href="#" class="">Uitloggen</a></li>
+                <div id="menuId" class="nav-wrapper sidebar">
+                    <div class="sidebar-logo">
+                        <img class="logo-icon" src="images/logo.svg" alt="">
+                    </div>
+                    <ul class="sidebar-navigation__list">
+                        <li class="sidebar-navigation__list-dashboard">
+                            <a class="sidebar-navigation__list-link" href="#">
+                                <img class="iconspacing" src="images/home.svg" alt="">
+                                <span class="menuitem">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-navigation__list-medewerkers">
+                            <a class="sidebar-navigation__list-link" href="#">
+                                <img class="iconspacing" src="images/forum.svg" alt="">
+                                <span class="menuitem">Medewerkers</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-navigation__list-telefoonnummers">
+                            <a class="sidebar-navigation__list-link" href="#">
+                                <img class="iconspacing" src="images/phone.svg" alt="">
+                                <span class="menuitem">Telefoonnummers</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-navigation__list-bedrijfsfuncties">
+                            <a class="sidebar-navigation__list-link" href="#">
+                                <img class="iconspacing" src="images/store.svg" alt="">
+                                <span class="menuitem">Bedrijfsfuncties</span>
+                            </a>
+                        </li>
+                        <span class="sidebar-navigation__list-divider"></span>
+
+                        <li class="sidebar-navigation__list-account">
+                            <a class="sidebar-navigation__list-link" href="#">
+                                <img class="iconspacing" src="images/personicon.svg" alt="">
+                                <span class="menuitem">Account</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-navigation__list-help">
+                            <a class="sidebar-navigation__list-link" href="#">
+                                <img class="iconspacing" src="images/statusinfo.svg" alt="">
+                                <span class="menuitem">Help</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-navigation__list-logout">
+                            <a class="sidebar-navigation__list-link" href="#">
+                                <img class="iconspacing" src="images/logout.svg" alt="">
+                                <span class="menuitem">Uitloggen</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -137,7 +182,7 @@
                 Openstaade taken
             </div>
 
-            <div class="openstaade-items">
+            <div class="openstaade-items no-scrollbar">
                 <div class="openstaade-items__item-notice openstaade__item-notice-1">
                     <div class="openstaade__item-notice-1-head">
                         <img class="openstaade__item-notice-1-head-icon" src="images/statuswarning.svg" alt="">
@@ -169,7 +214,7 @@
                 Jouw statistieken
             </div>
 
-            <div class="statistics-items">
+            <div class="statistics-items no-scrollbar">
                 <div class="statistics-items__item">
                     <div class="statistics-iconcircle">
                         <img class="statistics-icon" src="images/forum.svg" alt="">
@@ -208,5 +253,4 @@
         <div class="bleed2"></div>
     </div>
 </body>
-
 </html>
