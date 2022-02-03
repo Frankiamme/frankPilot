@@ -1,21 +1,39 @@
 .header{
-    grid-column: 2 / 3;
+    grid-column: 2 / -1;
     box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.3);
+    // border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
 
+
     display: grid;
-    grid-template-columns: 158px 1fr 252px;
+    grid-template-columns: 158px minmax(190px, 1fr) 252px;
     grid-template-rows: 40px;
     padding: 37px 32px;
     //1546 40
-    background-color: #ffffff;
+    background-color: $color-white;
+
+    // @media only screen and (max-width: 1000px){
+    //     grid-column: 1 / span 3;
+    //     display: grid;
+    //     grid-template-columns: 56px minmax(190px, 1fr) 120px;
+    //     grid-template-rows: 75px;
+    //     padding-left: 24px;
+    //     align-items: center;
+    // }
+
+    @media only screen and (max-width: 1000px){
+        display: none;
+    }
 
     &-title{
         grid-column: 1 / 2;
-        font-family: teleneobold;
         line-height: 40px;
-        color: black;
-        font-size: 36px;
+    }
+
+    @media only screen and (max-width: 1000px){
+        &-title{
+            display: none;
+        }
     }
 
     &-links{
@@ -29,11 +47,11 @@
         align-items: center;
         column-gap: 48px;
 
-        &-search{
+        &--search{
             grid-column: 1 / 2;
         }
 
-        &-account{
+        &--account{
             grid-column: 2 / 3;
             align-items: center;
             display: grid;
@@ -46,7 +64,7 @@
                 // padding-top: 5px;
             }
 
-            &-items{
+            &-placeholder{
                 align-items: center;
                 grid-column: 2 / 2;
                 display: grid;
@@ -65,10 +83,25 @@
                 }
             }
         }
+
+        @media only screen and (max-width: 1000px){
+            &--account{
+                display: none;
+            }
+            &--search{
+                grid-column: 1 / 2;
+            }
+        }
         
         &-logout{
             grid-column: 3 / 4;
             // padding-top: 2px;
+        }
+
+        @media only screen and (max-width: 1000px){
+            &-logout{
+                display: none;
+            }
         }
     }
 }
